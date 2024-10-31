@@ -49,4 +49,15 @@ echo "GET /" | socat - TCP:<target-host>:<port>,bind=<your-ip>
 
 ### 小结
 
-选择最佳的方法取决于你具体的网络配置和脚本的实现。如果有任何问题，或者需要进一步的帮助，请提供更多细节！
+如果无效，需要禁用下IPv6 
+```bash
+vim /etc/sysctl.conf
+
+## 添加
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+
+## 应用更改
+sysctl -p
+```
+
