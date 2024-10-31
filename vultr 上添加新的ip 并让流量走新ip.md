@@ -17,7 +17,7 @@ bun run src/aws/task.ts --unfinished=true --check=true --noproxy=true --checkonl
 sudo ip route del default via <gateway-ip> dev <interface-name> src <your-ip>
 
 ## 真实示例
-sudo ip route add default via 95.179.200.1 dev enp1s0 src 192.248.161.162
+sudo ip route add default via 45.32.88.1 dev enp1s0 proto dhcp src 144.202.122.7
 
 ## 通过下面的命令列出所有的网络接口
 ip link show
