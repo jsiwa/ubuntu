@@ -25,6 +25,11 @@ ip link show
 
 ```
 
+### 测试ip地址
+```bash
+curl https://api.myip.com
+```
+
 ### 方法 2：使用 `env` 设置
 
 如果你的脚本或命令支持环境变量，你可以在执行命令之前设置 `http_proxy` 或 `https_proxy` 来指定出口 IP。
